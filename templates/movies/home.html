@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Bienvenido al Catálogo de Películas 🎬</h1>
+    <p class="text-center mb-5">Este será el home de nuestra aplicación.</p>
+
+    <div class="row">
+        {% for movie in movies %}
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="{{ movie.poster }}" class="card-img-top" alt="{{ movie.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.title }}</h5>
+                        <p class="card-text mb-1">Año: {{ movie.year }}</p>
+                        <p class="card-text">Rating: {{ movie.rating }}</p>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-center">No hay películas para mostrar aún.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
