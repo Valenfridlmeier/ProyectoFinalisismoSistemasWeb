@@ -1,6 +1,6 @@
-PelisApp 🎬
+PelisApp 
 
-Es el proyecto final de la materia Desarrollo de sistemas Web
+Es el proyecto final de la materia Desarrollo de sistemas Web, diseñado por el alumno Fridlmeier Valentin
 PelisApp es un pequeño catálogo de películas desarrollado con Django y Bootstrap 5, que muestra una lista de películas de ejemplo utilizando vistas basadas en clases y herencia de plantillas.
 
 ## Características
@@ -35,3 +35,5 @@ PelisApp es un pequeño catálogo de películas desarrollado con Django y Bootst
    ```bash
    git clone https://github.com/TU_USUARIO/proyecto-final-pelisapp.git
    cd proyecto-final-pelisapp
+
+No se necesita de Base de datos Externa, Django se instalará automáticamente.
